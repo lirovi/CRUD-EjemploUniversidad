@@ -60,6 +60,9 @@
                                 <a class="btn btn-link" href="{{ route('password.request') }}">
                                     {{ __('Forgot Your Password?') }}
                                 </a>
+                                <a class="btn btn-link" href="redirect">
+                                    Facebook
+                                </a>
                             </div>
                         </div>
                     </form>
@@ -78,7 +81,7 @@
                     <i class="fa fa-google"></i>
                     Login con Google
                   </a>
-                  
+
                 </div>
 
             </div>
