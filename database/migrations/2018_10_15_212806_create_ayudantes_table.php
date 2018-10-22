@@ -15,6 +15,8 @@ class CreateAyudantesTable extends Migration
     {
         Schema::create('ayudantes', function (Blueprint $table) {
             $table->increments('id');
+            $table->char('name',65);
+            $table->index(['id','name']);
             $table->timestamps();
         });
     }

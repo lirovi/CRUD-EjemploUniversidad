@@ -12,16 +12,16 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #fff;
-                color: #636b6f;
+                background-color: #74992e;
+                color: #ffff;
                 font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
+                font-weight: 100;
+                height: 50vh;
                 margin: 0;
             }
 
             .full-height {
-                height: 100vh;
+                height: 80vh;
             }
 
             .flex-center {
@@ -49,7 +49,7 @@
             }
 
             .links > a {
-                color: #636b6f;
+                color: #000;
                 padding: 0 25px;
                 font-size: 12px;
                 font-weight: 600;
@@ -81,16 +81,16 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    CRUD Laravel Limber Rojas
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                      <a href="{{ route('aulas.index') }}">Listado Aulas</a>
+                      <a href="{{ route('docentes.index') }}">Listado Docentes</a>
+                      <a href="{{ route('materias.index') }}">Listado Materias</a>
+                      <a href="{{ route('ayudantes.index') }}">Listado Ayudantes</a>
+                      <a href="{{ route('carreras.index') }}">Listado Carreras</a>
+                      <a href="{{ route('horarios.index') }}">Listado Horarios</a>
                 </div>
             </div>
         </div>

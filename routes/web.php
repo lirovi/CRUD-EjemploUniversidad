@@ -16,8 +16,14 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/redirect','SocialController@redirect');
 Route::get('/callback','SocialController@callback');
+
+Route::resource('aulas','DbWeb1\AulaController');
+Route::resource('docentes','DbWeb1\DocenteController');
+Route::resource('materias','DbWeb1\MateriaController');
+Route::resource('ayudantes','DbWeb1\AyudanteController');
+Route::resource('carreras','DbWeb1\CarreraController');
+Route::resource('horarios','DbWeb1\HorarioController');
